@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    let bookedTime = []
+    let bookedTimeArr = []
     const date = new Date()
     const dayInWeek = [
     	"Chủ nhật",
@@ -287,8 +287,8 @@ $( document ).ready(function() {
       }
     }
 
-    bookedTime = timeItems
-    console.log('bookedTime: ', bookedTime);
+    bookedTimeArr = timeItems
+    console.log('bookedTime: ', bookedTimeArr);
     var timeItemsDate = new Date(+timeItems[0], +timeItems[1], +timeItems[2], +timeItems[3], +timeItems[4], +timeItems[5])
     const bookedTime = `${timeItemsDate.getHours()}:${timeItemsDate.getMinutes()}`
     console.log("booked time", bookedTime)
