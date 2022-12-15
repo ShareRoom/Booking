@@ -299,6 +299,7 @@ $(document).ready(function () {
         });
 
         data.map((item) => {
+          console.log(item)
           let originString = item.gioden;
           let stringSplited = originString.replace("Date(", "");
           stringSplited = stringSplited.replace(")", "");
